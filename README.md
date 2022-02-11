@@ -11,4 +11,7 @@ BSPWM + POLYBAR + POWERLEVEL10K + PICOM COMPTON + BAT + LSD + RANGER + BRAVE BRO
 ![Captura de pantalla -2022-02-10 22-21-36](https://user-images.githubusercontent.com/97669969/153664118-982c0c73-52c0-4ffd-aca9-fab85043fd83.png)
 ![Captura de pantalla -2022-02-10 22-25-28](https://user-images.githubusercontent.com/97669969/153664125-2468aa97-e779-42be-bb3a-5d1b9ac6f3c3.png)
 
-Toda la configuracion del entorno > ethical-hacker-work-environment/configuracion.yml
+Toda la configuracion del entorno esta dentro del archivo .yml del repositorio > ethical-hacker-work-environment/configuracion.yml
+
+
+++++++++++++++++++++++++++++++++++IRE ACTUALIZANDO EL REPOSITORIO SEGUN ACTUALIZE Y AÑADE MAS CONFIGURACIONES A MI WORK-ENVIRONMENT+++++++++++++++++++++++++++++
