@@ -23,3 +23,4 @@ Toda la configuracion del entorno esta dentro del archivo .yml del repositorio >
 >>>> https://github.com/tmcyberagent/ETHICAL-HACKER-WORK-ENVIRONMENT/tree/main/ethical-hacker-work-environment <<<<
 
 ++++++++++++++++++++++++++++++++++IRE ACTUALIZANDO EL REPOSITORIO SEGUN ACTUALIZE Y AÑADE MAS CONFIGURACIONES A MI WORK-ENVIRONMENT+++++++++++++++++++++++++++++
+
