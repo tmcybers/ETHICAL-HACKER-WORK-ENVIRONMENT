@@ -22,13 +22,6 @@ FZF +
 Toda la configuracion del entorno esta dentro del archivo .yml del repositorio > 
 >>>> https://github.com/tmcyberagent/ETHICAL-HACKER-WORK-ENVIRONMENT/tree/main/ethical-hacker-work-environment <<<<
 
-++++++++++++++++++++++++++++++++++IRE ACTUALIZANDO EL REPOSITORIO SEGUN ACTUALIZE Y AÑADE MAS CONFIGURACIONES A MI WORK-ENVIRONMENT+++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++ACTUALIZARE EL REPOSITORIO SEGUN ACTUALIZE Y AÑADE MAS CONFIGURACIONES A MI WORK-ENVIRONMENT+++++++++++++++++++++++++++++
 
-------------------------------------------------FONDO DE PANTALLA CON feh-----------------------------------------------------------:
 
-sudo apt install feh
-cd ~/.config/bspwm/bspwmrc 
-nano bspwmrc
-ahora agregamos la siguente linea al final : feh --bg-fill /home/tmcyber/images/hacking-hackers.jpg
----ten en cuenta tu nombre de usuario y los directorios, modifica y pon los tuyos---
-(abres google y descargas un fondo de pantalla ,o si no lo pasa mediante samba o servidor a tu maquina..etc)
