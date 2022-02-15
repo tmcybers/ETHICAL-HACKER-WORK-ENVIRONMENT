@@ -8,3 +8,4 @@ BSPWM + POLYBAR + POWERLEVEL10K + PICOM COMPTON + BAT + LSD + RANGER +
 ![Captura de pantalla -2022-02-10 22-25-28](https://user-images.githubusercontent.com/97669969/154141304-25db8fc3-95e8-4161-b0b7-59a98f3c799d.png)
 ![Captura de pantalla -2022-02-10 22-22-18](https://user-images.githubusercontent.com/97669969/154141307-d78820ee-3322-4da0-a750-ebcff2deec68.png)
 ![Captura de pantalla -2022-02-10 22-21-36](https://user-images.githubusercontent.com/97669969/154141320-a49440e3-1460-4a9c-a8f1-7a683f2f92c8.png)
+  TODA CONFIGURACION MOVIDA A >> https://github.com/tmcyberagent/ETHICAL-HACKER-WORK-ENVIRONMENT/blob/main/ethical-hacker-work-environment/configuracion.yml
