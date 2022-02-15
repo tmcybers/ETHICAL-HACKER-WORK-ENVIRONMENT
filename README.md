@@ -1,13 +1,13 @@
 # ETHICAL-HACKER-WORK-ENVIRONMENT
-BSPWM + 
-POLYBAR + 
-POWERLEVEL10K + 
-PICOM COMPTON + 
-BAT + 
-LSD + 
-RANGER + 
-BRAVE BROWSER + 
-FZF +
+BSPWM 
+POLYBAR  
+POWERLEVEL10K 
+PICOM COMPTON 
+BAT 
+LSD 
+RANGER 
+BRAVE BROWSER  
+FZF 
 
 
 ![Captura de pantalla -2022-02-10 18-55-01](https://user-images.githubusercontent.com/97669969/153664059-601d0e08-1672-446c-8d5e-8e6fbaadd55d.png)
@@ -51,7 +51,7 @@ sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev li
 
 
 
-1. INSTALACION BSPWM Y SXHKD :
+INSTALACION BSPWM Y SXHKD :
 
 sudo apt install bspwm    
 (y tambien lo clonaremos mediante github.)
@@ -89,7 +89,7 @@ cp examples/sxhkdrc ~/.config/sxhkd/
 
 
 
-2. POLYBAR :
+POLYBAR :
 
 
 -Ahora Necesitamos Fonts' (para que polybar funcione correctamente y para nustro Tunning ) 
@@ -165,7 +165,7 @@ ahora agregamos la siguente linea al final : feh --bg-fill /home/tmcyber/images/
 (abres google y descargas un fondo de pantalla ,o si no lo pasa mediante samba o servidor a tu maquina..etc)
 
 
-4. TRANSPARENCIAS CON picom (compton) : 
+TRANSPARENCIAS CON picom (compton) : 
 
 =(ejecuta el cloneo en la carpeta /Descargas) suele saltar errores a la hora de clonar en /Home)
 
@@ -184,17 +184,17 @@ cp picom.conf al directorio ~/.config/picom
 +En algunos casos usuarios se han trepado con que el archivo picom.conf no esta , si este es tu caso creeamos uno en el dir : cd~/.config/picom con touch picom.conf  (dale permisos chmod +x)
 +Aqui tienes mi conf de picom copy/paste en el tuyo , listo : 
 
-=MUY IMPORTANTE=
+MUY IMPORTANTE
 El .conf esta editado y descomentado todo lo relacionado con blur y cambiado el 'backend = "glx"' por 'backend = "xrender"'  (nada de glx).
---En multitud de ocasiones "glx y Blur bloqueo el gestor y las ventanas, o se experimento una lentitud de la maquina) (te lo digo por experiencia).
---Si te interesa tener blurring en las ventanas, comenta las lineas de codigo en el apartado blur, e intentalo , pero no te lo recomiendo , (en mi caso no me gusta el blurring)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+En multitud de ocasiones "glx y Blur bloqueo el gestor y las ventanas, o se experimento una lentitud de la maquina) (te lo digo por experiencia).
+Si te interesa tener blurring en las ventanas, comenta las lineas de codigo en el apartado blur, e intentalo , pero no te lo recomiendo , (en mi caso no me gusta el blurring)
+
 AHORA nos dirigimos a cd ~/.config/bspwm/bspwmrc (el cerebro de nuestro entorno), abres con nano o vim  y agregas al final lo siguente : 
 
 picom &
 
--Listo, guardas y sales . reinicio total de configuraciones  WIN+ALT+R (en mi caso), listo.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Listo, guardas y sales . reinicio total de configuraciones  WIN+ALT+R (en mi caso), listo.
+
 +OPCIONAL si queres quitar todos los bordes, y tener esquinas redondeadas aplica esto:
 echo 'picom --experimental-backends &' >> ~/.config/bspwm/bspwmrc 
 echo 'bspc config border_width 0' >> ~/.config/bspwm/bspwmrc
@@ -202,7 +202,7 @@ echo 'bspc config border_width 0' >> ~/.config/bspwm/bspwmrc
 Listo!
 
 
-5.LANZADOR ROFI :
+LANZADOR ROFI :
 
 cd
 sudo apt update
@@ -225,7 +225,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 en tu terminal escribe : zsh 
 
 
-+++++IMPORTANTE: Para el usuario root debe hacer lo mismos pasos.++++ 
+IMPORTANTE: Para el usuario root debe hacer lo mismos pasos.
 Listo.
 nano ~/.p10k.zsh  (el conf editable dela powerlevel10k , lo puedes configurar as tu gusto quitando y agregando cositas..etc)
 
@@ -240,7 +240,7 @@ usermod --shell /usr/bin/zsh root            (para root tambien executas esto)
 
 
 
----------------------------OPCIONAL INSTALAMOS BRAVE BROWSER-----------------------
+OPCIONAL INSTALAMOS BRAVE BROWSER
 
 +brave es muy seguro 
 +rastreadores y bloqueadores incorporados 
@@ -260,8 +260,7 @@ sudo apt install brave-browser
 Listo!
 
 
-
---------------------------OPCIONAL INSTALAMOS LSD------------------------------------
+OPCIONAL INSTALAMOS LSD
 
 Repositorio Github : https://github.com/Peltoche/lsd
 (igual que en caso de bat , releases> version , en mi caso amd64 , io tenngo la 0.21.0 )
@@ -271,7 +270,7 @@ lsd -l  (veras la diferencia de ls)
 
 
 
---------------------------OPCIONAL INSTALAMOS RANGER--------------------------------------------------
+OPCIONAL INSTALAMOS RANGER
 
 sudo apt install ranger
  listo !
@@ -280,7 +279,7 @@ sudo apt install ranger
  
  
 
---------------------------OPCIONAL INSTALAMOS BAT--------------------------------------------------------
+OPCIONAL INSTALAMOS BAT
 
 https://github.com/sharkdp/bat
 
@@ -288,25 +287,6 @@ sudo dpkg   para instalar bat
 (io uso la version 19 punto algo, en la pagina>releases y escoje desde 19 para arriba , en mi caso para amd64 )
 
 cat vs bat (prueba y veras la diferencia)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -329,7 +309,7 @@ cd~/.config/feh         (Sencillo Gestor de fondos de Pantalla)
 
 cd /home/tmcyber/polybar-themes/bitmap/hack/ -por ex : directorio de mi tema establecido de polybar
                                                                   -cada tema tiene un config.ini suyo 
-																  -con nano/vim abres y puedes modificarla yo personalizarla al maximo
+
 
 
 
