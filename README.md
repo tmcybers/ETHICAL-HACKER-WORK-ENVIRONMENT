@@ -8,7 +8,7 @@
 ![Captura de pantalla -2022-02-10 22-25-28](https://user-images.githubusercontent.com/97669969/153664125-2468aa97-e779-42be-bb3a-5d1b9ac6f3c3.png)
 
 
-              
+      
 
 MUY IMPORTANTE : Configura y haz la instalacion en una maquina virtual,  o clona la maquina .etc. (solo en el caso de no tener experiencia con gestores de ventanas y sus previas configuraciones)
 
@@ -18,17 +18,9 @@ LOS COMNANDOS ESTAN P[REPARADOS PARA COPY/PASTE I LISTO, HAY CASOS EN DONDE TEND
 ESTO ES SEGUN LA DISTRIBUCUION QUE VAS A USAR PARA LA INSTALACION, SE DA EL CASO , PERO LA INSTALACION SERIA LA MISMA.
 LA MAYORIA DE LAS INSTALACIONES/CLONE SE HACEN EN HOME/ PERO SE DA EL CASO QUE TENDRAS QUE HACERLO EN /DESCARGAS /DOWNLOADS PRESTA ATENCION. ASI EVITAS FALLOS/
 
-
-
-
 Instalacion hecha sobre : Parrot OS 4.11.3 2022 (probada tambien en Kali -sin problemas previos) 
 
-
-
-
 Librerias Necesarias (hacer sudo apt install de todas, si algunas se encuentran instaladas , pasas a las siguentes..hasta tener todas instaladas.) :
-
-
 
 sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
 libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
@@ -43,12 +35,6 @@ libgl1-mesa-dev libpcre2-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev li
 
 sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 
-
-
-
-
-
-
 INSTALACION BSPWM Y SXHKD :
 
 sudo apt install bspwm    
@@ -59,9 +45,6 @@ cd bspwm/
 make
 sudo make install
 
-
-
-
 Proceedemos con sxhkd :
 sudo apt install sxhkd    (por si no esta..si se encuentra instalado, |perfecto| seguiremos clonandolo no pasa nada..)
 cd
@@ -70,9 +53,7 @@ cd ../sxhkd/
 make
 sudo make install
 
-
 Creeamos directorios y copiamos los config en los directorios corespondientes, do copy/paste : 
-
 
 (ejecuta cd muy importante y luego creea los directorios, y copia los archivos, si no te funciona desde home dirigete y entra dentro 
 de las carpetas correspondientes y has cp (copy) desde ahy..apuntando hacia esos directorios)
@@ -89,12 +70,7 @@ cp examples/sxhkdrc ~/.config/sxhkd/
 +Ahora abrimos sxhkdrc con nano/vim y editamos los shortcuts a nuetro gusto
 +En mi caso los shorts mios son estos: 
 
-
-
-
-
 POLYBAR :
-
 
 -Ahora Necesitamos Fonts' (para que polybar funcione correctamente y para nustro Tunning ) 
 Abre tu navegador y dirigete a https://www.nerdfonts.com/ o algun otro sitio tuyo preferido.
@@ -105,8 +81,6 @@ https://www.nerdfonts.com/font-downloads
 https://www.1001fonts.com/jetbrains-mono-font.html
 https://www.1001freefonts.com/es/ubuntu-mono.font
  
-
-
 Por ex Hack Nerd Fonts de nerdfonts.com : 
 cd Descargas
 sudo mv Hack.zip /usr/share/local/fonts   (si falla de dir/ en mi caso fue : usr/share/fonts)
@@ -114,7 +88,7 @@ sudo unzip
 ahora abre una terminal WIN+ENTER (segun los shortcuts que has elegido de preferencia) mira arriba de las terminales y dirigete a Preferencias de perfil , editar perfil ,dirigete a fonts 
 ahy busca y elige tu estilo de font que descargaste, y listo.
  
- (clonamos desde github LA POLYBAR) 
+(clonamos desde github LA POLYBAR) 
 cd 
 git clone --recursive https://github.com/polybar/polybar
 cd polybar/
@@ -127,19 +101,14 @@ sudo make install
 Executa echo sobre bspqm -archivo de arranque- (verifica con un cat) :
 echo '~/.config/polybar/./launch.sh' >> ~/.config/bspwm/bspwmrc
 
-
 IMPORTANTE -si tienes el error comun de cmake .. con CMakeLists.txt? instala estas librerias de nuevo : 
 sudo apt install libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev i3-wm libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
 sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx python3-packaging libuv1-dev libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
 sudo apt update
-
 En este punto ia se puede reinciar (sudo kill -9 -1) , y iniciar en bspwm
 
-+Y podemos ver Polybar arriba (es la polybar normal..enseguida lo tuneamos con temas interesantes..paciencia..o lo puedes modificar a tu gusto con el tiempo...)
+Y podemos ver Polybar arriba (es la polybar normal..enseguida lo tuneamos con temas interesantes..paciencia..o lo puedes modificar a tu gusto con el tiempo...)
 ! Se puede dar el caso ,que no aparezca o NO ESTE, que en diferentes ocasiones me paso a mi , para esto ejecuta un sudo rm -r polybar y clonea de nuevo siguinedo los pasos descritos.
-
-
-
 
 Instalamos TEMAS para Polybar
 
@@ -153,11 +122,6 @@ Instalamos TEMAS para Polybar
 + Lo puedes modificar al maximo (ten mucho cuidado lo que tocas , te puedes quedar sin barra, te recomiendo investigar un poco por tu cuenta.
   de igual manera con copy/paste al mio teienes la polybar tuneada de manera mia+
 
-
-
-
-
-
 FONDO DE PANTALLA CON feh
 
 sudo apt install feh
@@ -166,7 +130,6 @@ nano bspwmrc
 ahora agregamos la siguente linea al final : feh --bg-fill /home/tmcyber/images/hacking-hackers.jpg
 ---ten en cuenta tu nombre de usuario y los directorios, modifica y pon los tuyos---
 (abres google y descargas un fondo de pantalla ,o si no lo pasa mediante samba o servidor a tu maquina..etc)
-
 
 TRANSPARENCIAS CON picom (compton) : 
 
@@ -204,7 +167,6 @@ echo 'bspc config border_width 0' >> ~/.config/bspwm/bspwmrc
 
 Listo!
 
-
 LANZADOR ROFI :
 
 cd
@@ -213,7 +175,6 @@ sudo apt install rofi
 WIN+D (shortcut a tu gusto, deberia aparecer rofi)
 rofi-theme-selector (elige tema tu gusto)
 (+En los repositorios de github hay temas por gustos..)
-
 
 TUNNING DE TERMINALES POWERLEVEL10K :
 
@@ -227,7 +188,6 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 en tu terminal escribe : zsh 
 
-
 IMPORTANTE: Para el usuario root debe hacer lo mismos pasos.
 Listo.
 nano ~/.p10k.zsh  (el conf editable dela powerlevel10k , lo puedes configurar as tu gusto quitando y agregando cositas..etc)
@@ -239,9 +199,6 @@ APLICAMOS LA SHELL ZSH POR DEFECTO (es opcional, si queres seguir en bash , no e
 
 usermod --shell /usr/bin/zsh tmcyber       (seguido de tu usuario)
 usermod --shell /usr/bin/zsh root            (para root tambien executas esto)
-
-
-
 
 OPCIONAL INSTALAMOS BRAVE BROWSER
 
@@ -262,7 +219,6 @@ sudo apt install brave-browser
 
 Listo!
 
-
 OPCIONAL INSTALAMOS LSD
 
 Repositorio Github : https://github.com/Peltoche/lsd
@@ -271,8 +227,6 @@ sudo dkpg -i  (archivo que descargaste...enter y listo)
 
 lsd -l  (veras la diferencia de ls)
 
-
-
 OPCIONAL INSTALAMOS RANGER
 
 sudo apt install ranger
@@ -280,8 +234,6 @@ sudo apt install ranger
  
  ahora escribe en tu terminal ranger y veras la diferencia.(si lo queres usar , es tema de gustos...a mi me parece super util)
  
- 
-
 OPCIONAL INSTALAMOS BAT
 
 https://github.com/sharkdp/bat
@@ -290,16 +242,6 @@ sudo dpkg   para instalar bat
 (io uso la version 19 punto algo, en la pagina>releases y escoje desde 19 para arriba , en mi caso para amd64 )
 
 cat vs bat (prueba y veras la diferencia)
-
-
-
-
-
-
-
-
-
-
 
 DIRECTORIOS IMPORTANTES :
 
