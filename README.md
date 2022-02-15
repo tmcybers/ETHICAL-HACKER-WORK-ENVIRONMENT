@@ -13,10 +13,6 @@
 MUY IMPORTANTE : Configura y haz la instalacion en una maquina virtual,  o clona la maquina .etc. (solo en el caso de no tener experiencia con gestores de ventanas y sus previas configuraciones)
 
 PRESTA ATENCION, A LOS PASOS A SEGUIR, NO HAGAS NADA CON USUARIO ROOT, USA TU USUARIO HABITUAL / O CREAA UNO NUEVO COMO TU CREEAS CONVENIENTE/
-SOLO EN EL CASO DE QUE HAGA FALTA Y SE ESPECIFICA TAL CASO SE USA SUDO/
-LOS COMNANDOS ESTAN P[REPARADOS PARA COPY/PASTE I LISTO, HAY CASOS EN DONDE TENDRAS QUE ESPECIFICAR TU USUARIOS POR SUSPUESTO, O CAMBIAR ALGUNOS DIRECTORIOS
-ESTO ES SEGUN LA DISTRIBUCUION QUE VAS A USAR PARA LA INSTALACION, SE DA EL CASO , PERO LA INSTALACION SERIA LA MISMA.
-LA MAYORIA DE LAS INSTALACIONES/CLONE SE HACEN EN HOME/ PERO SE DA EL CASO QUE TENDRAS QUE HACERLO EN /DESCARGAS /DOWNLOADS PRESTA ATENCION. ASI EVITAS FALLOS/
 
 Instalacion hecha sobre : Parrot OS 4.11.3 2022 (probada tambien en Kali -sin problemas previos) 
 
@@ -38,7 +34,6 @@ sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev li
 INSTALACION BSPWM Y SXHKD :
 
 sudo apt install bspwm    
-(y tambien lo clonaremos mediante github.)
 cd
 git clone https://github.com/baskerville/bspwm.git
 cd bspwm/
