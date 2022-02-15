@@ -1,15 +1,3 @@
-#ETHICAL-HACKER-WORK-ENVIRONMENT
-BSPWM 
-POLYBAR  
-POWERLEVEL10K 
-PICOM COMPTON 
-BAT 
-LSD 
-RANGER 
-BRAVE BROWSER  
-FZF 
-
-
 ![Captura de pantalla -2022-02-10 18-55-01](https://user-images.githubusercontent.com/97669969/153664059-601d0e08-1672-446c-8d5e-8e6fbaadd55d.png)
 ![Captura de pantalla -2022-02-10 22-22-18](https://user-images.githubusercontent.com/97669969/153664067-373f4d5e-a44d-4a4d-ae73-18ee4913b866.png)
 ![Captura de pantalla -2022-02-10 16-30-10](https://user-images.githubusercontent.com/97669969/153664079-35659610-820a-4483-846a-e287070d049e.png)
@@ -24,16 +12,23 @@ FZF
 
 MUY IMPORTANTE : Configura y haz la instalacion en una maquina virtual,  o clona la maquina .etc. (solo en el caso de no tener experiencia con gestores de ventanas y sus previas configuraciones)
 
-+PRESTA ATENCION, A LOS PASOS A SEGUIR, NO HAGAS NADA CON USUARIO ROOT, USA TU USUARIO HABITUAL / O CREAA UNO NUEVO COMO TU CREEAS CONVENIENTE/
-+SOLO EN EL CASO DE QUE HAGA FALTA Y SE ESPECIFICA TAL CASO SE USA SUDO/
-+LOS COMNANDOS ESTAN P[REPARADOS PARA COPY/PASTE I LISTO, HAY CASOS EN DONDE TENDRAS QUE ESPECIFICAR TU USUARIOS POR SUSPUESTO, O CAMBIAR ALGUNOS DIRECTORIOS
-+ESTO ES SEGUN LA DISTRIBUCUION QUE VAS A USAR PARA LA INSTALACION, SE DA EL CASO , PERO LA INSTALACION SERIA LA MISMA.
-+LA MAYORIA DE LAS INSTALACIONES/CLONE SE HACEN EN HOME/ PERO SE DA EL CASO QUE TENDRAS QUE HACERLO EN /DESCARGAS /DOWNLOADS PRESTA ATENCION. ASI EVITAS FALLOS/
+PRESTA ATENCION, A LOS PASOS A SEGUIR, NO HAGAS NADA CON USUARIO ROOT, USA TU USUARIO HABITUAL / O CREAA UNO NUEVO COMO TU CREEAS CONVENIENTE/
+SOLO EN EL CASO DE QUE HAGA FALTA Y SE ESPECIFICA TAL CASO SE USA SUDO/
+LOS COMNANDOS ESTAN P[REPARADOS PARA COPY/PASTE I LISTO, HAY CASOS EN DONDE TENDRAS QUE ESPECIFICAR TU USUARIOS POR SUSPUESTO, O CAMBIAR ALGUNOS DIRECTORIOS
+ESTO ES SEGUN LA DISTRIBUCUION QUE VAS A USAR PARA LA INSTALACION, SE DA EL CASO , PERO LA INSTALACION SERIA LA MISMA.
+LA MAYORIA DE LAS INSTALACIONES/CLONE SE HACEN EN HOME/ PERO SE DA EL CASO QUE TENDRAS QUE HACERLO EN /DESCARGAS /DOWNLOADS PRESTA ATENCION. ASI EVITAS FALLOS/
+
+
+
 
 Instalacion hecha sobre : Parrot OS 4.11.3 2022 (probada tambien en Kali -sin problemas previos) 
 
 
+
+
 Librerias Necesarias (hacer sudo apt install de todas, si algunas se encuentran instaladas , pasas a las siguentes..hasta tener todas instaladas.) :
+
+
 
 sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
 libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
@@ -51,6 +46,9 @@ sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev li
 
 
 
+
+
+
 INSTALACION BSPWM Y SXHKD :
 
 sudo apt install bspwm    
@@ -61,6 +59,9 @@ cd bspwm/
 make
 sudo make install
 
+
+
+
 Proceedemos con sxhkd :
 sudo apt install sxhkd    (por si no esta..si se encuentra instalado, |perfecto| seguiremos clonandolo no pasa nada..)
 cd
@@ -69,7 +70,9 @@ cd ../sxhkd/
 make
 sudo make install
 
+
 Creeamos directorios y copiamos los config en los directorios corespondientes, do copy/paste : 
+
 
 (ejecuta cd muy importante y luego creea los directorios, y copia los archivos, si no te funciona desde home dirigete y entra dentro 
 de las carpetas correspondientes y has cp (copy) desde ahy..apuntando hacia esos directorios)
@@ -89,6 +92,7 @@ cp examples/sxhkdrc ~/.config/sxhkd/
 
 
 
+
 POLYBAR :
 
 
@@ -101,6 +105,8 @@ https://www.nerdfonts.com/font-downloads
 https://www.1001fonts.com/jetbrains-mono-font.html
 https://www.1001freefonts.com/es/ubuntu-mono.font
  
+
+
 Por ex Hack Nerd Fonts de nerdfonts.com : 
 cd Descargas
 sudo mv Hack.zip /usr/share/local/fonts   (si falla de dir/ en mi caso fue : usr/share/fonts)
