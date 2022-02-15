@@ -1,4 +1,4 @@
-# ETHICAL-HACKER-WORK-ENVIRONMENT
+#ETHICAL-HACKER-WORK-ENVIRONMENT
 BSPWM 
 POLYBAR  
 POWERLEVEL10K 
@@ -30,8 +30,8 @@ MUY IMPORTANTE : Configura y haz la instalacion en una maquina virtual,  o clona
 +ESTO ES SEGUN LA DISTRIBUCUION QUE VAS A USAR PARA LA INSTALACION, SE DA EL CASO , PERO LA INSTALACION SERIA LA MISMA.
 +LA MAYORIA DE LAS INSTALACIONES/CLONE SE HACEN EN HOME/ PERO SE DA EL CASO QUE TENDRAS QUE HACERLO EN /DESCARGAS /DOWNLOADS PRESTA ATENCION. ASI EVITAS FALLOS/
 
-=Instalacion hecha sobre : Parrot OS 4.11.3 2022 (probada tambien en Kali -sin problemas previos) 
-=Instalacion PROBADA/CONFIGURADA COMO Host en hp pavilion y acer nitro -sin problemas previos)
+Instalacion hecha sobre : Parrot OS 4.11.3 2022 (probada tambien en Kali -sin problemas previos) 
+
 
 Librerias Necesarias (hacer sudo apt install de todas, si algunas se encuentran instaladas , pasas a las siguentes..hasta tener todas instaladas.) :
 
@@ -122,15 +122,12 @@ Executa echo sobre bspqm -archivo de arranque- (verifica con un cat) :
 echo '~/.config/polybar/./launch.sh' >> ~/.config/bspwm/bspwmrc
 
 
-----(IMPORTANTE -si tienes el error comun de cmake .. con CMakeLists.txt? instala estas librerias de nuevo : ---------------------
+IMPORTANTE -si tienes el error comun de cmake .. con CMakeLists.txt? instala estas librerias de nuevo : 
 sudo apt install libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev i3-wm libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
 sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx python3-packaging libuv1-dev libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
 sudo apt update
 
-
-
-
-------------------En este punto ia se puede reinciar (sudo kill -9 -1) , y iniciar en bspwm----------------------------------------
+En este punto ia se puede reinciar (sudo kill -9 -1) , y iniciar en bspwm
 
 +Y podemos ver Polybar arriba (es la polybar normal..enseguida lo tuneamos con temas interesantes..paciencia..o lo puedes modificar a tu gusto con el tiempo...)
 ! Se puede dar el caso ,que no aparezca o NO ESTE, que en diferentes ocasiones me paso a mi , para esto ejecuta un sudo rm -r polybar y clonea de nuevo siguinedo los pasos descritos.
@@ -138,7 +135,7 @@ sudo apt update
 
 
 
-------------------------------------Instalamos TEMAS para Polybar-------------------------------------------------------:
+Instalamos TEMAS para Polybar
 
 +Descarga materialicons en /HOME , el repositorio : https://github.com/google/material-design-icons.git (no olvide al final del clone hacer fc-cache -fv)
 
@@ -155,7 +152,7 @@ sudo apt update
 
 
 
-------------------------------------------------FONDO DE PANTALLA CON feh-----------------------------------------------------------:
+FONDO DE PANTALLA CON feh
 
 sudo apt install feh
 cd ~/.config/bspwm/bspwmrc 
@@ -314,14 +311,6 @@ cd /home/tmcyber/polybar-themes/bitmap/hack/ -por ex : directorio de mi tema est
 
 
 
-
-
-
-
-
-
-
-
-++++++++++++++++++++++++++++++++++ACTUALIZARE EL REPOSITORIO SEGUN ACTUALIZE Y AÑADE MAS CONFIGURACIONES A MI WORK-ENVIRONMENT+++++++++++++++++++++++++++++
+ACTUALIZARE EL REPOSITORIO SEGUN ACTUALIZE Y AÑADE MAS CONFIGURACIONES A MI WORK-ENVIRONMENT
 
 
