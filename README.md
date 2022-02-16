@@ -1,6 +1,7 @@
 # ETHICAL-HACKER-WORK-ENVIRONMENT
- #TMCyber
-  #ETHICAL HACKER | CEH | PYTHON IA|ML | |Bug Bounty|Researcher|
+     # TMCyber
+     # ETHICAL HACKER | CEH | PYTHON IA|ML | |Bug Bounty|Researcher|
+
 ![Captura de pantalla -2022-02-10 19-59-39](https://user-images.githubusercontent.com/97669969/154141253-28876c7b-c3a2-4fc0-afb4-287c14752633.png)
 ![Captura de pantalla -2022-02-10 18-55-01](https://user-images.githubusercontent.com/97669969/154141266-2e1d424d-2d37-465a-8094-a59e164b43e8.png)
 ![Captura de pantalla -2022-02-10 16-30-10](https://user-images.githubusercontent.com/97669969/154141274-15c5a6de-49fe-49bf-9ee1-0ba650b4605a.png)
@@ -34,14 +35,14 @@
 * sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
 libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
 
-• sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev 
+ • sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev 
 libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev 
 libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
 
-• sudo apt install meson libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev 
+ • sudo apt install meson libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev 
 libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev libconfig-dev 
 libgl1-mesa-dev libpcre2-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev libxcb-glx0-dev
 
-• sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+ • sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
  
-• sudo apt update
+ • sudo apt update
