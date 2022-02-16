@@ -179,7 +179,7 @@ sudo apt update
 • Sigue los pasos indicados en el repositorio, las fuentes las tienes instaladas desde el paso de ariba descrito, como material icons.
  
 
-# No olvides esta linea se codigo: bash ~/.config/polybar/launch.sh --cuts  
+# No olvides esta linea de codigo en bspwm : bash ~/.config/polybar/launch.sh --cuts  
 
 •  en ~/.config/bspwm/bspwmrc 
 
@@ -187,7 +187,7 @@ sudo apt update
 
 • En el repo arriba se encuentra un archivo modules.ini , editado y configurado al maximo, con icons etc, modules , scripts. 
 
-•  Lo puedes modificar al maximo (ten mucho cuidado lo que tocas , te puedes quedar sin barra, te recomiendo investigar un poco.
+•  Lo puedes modificar al maximo, ten mucho cuidado lo que tocas , te puedes quedar sin barra, te recomiendo investigar un poco.
 
 •  De igual manera con copy/paste al mio tienes la polybar tuneada de manera mia.
 
