@@ -1,6 +1,7 @@
 # ETHICAL-HACKER-WORK-ENVIRONMENT
      # TMCyber
      # ETHICAL HACKER | CEH | PYTHON IA|ML | |Bug Bounty|Researcher|
+
 BSPWM + LSD + POLYBAR + GNOME TERMINAL + POWERLEVEL10K
 ![Captura de pantalla -2022-02-10 19-59-39](https://user-images.githubusercontent.com/97669969/154141253-28876c7b-c3a2-4fc0-afb4-287c14752633.png)
 BSPWM + GNOME TERMINAL + POWERLEVEL10K + POLYBAR THEME
@@ -20,17 +21,17 @@ BSPWM + POLYBAR + BRAVE
   
 # MUY IMPORTANTE: Este entorno esta habilitado con transparencias en TODAS las ventanas. 
   
-     #Configura y haz la instalacion en una maquina virtual,  o clona la maquina .
-     #Solo en el caso de no tener experiencia con gestores de ventanas y sus previas configuraciones)
-     #Configura y haz la instalacion en una maquina virtual,  o clona la maquina .
-     #Solo en el caso de no tener experiencia con gestores de ventanas y sus previas configuraciones)
+     #Configura y haz la instalacion en una maquina virtual, o clona la maquina.
+     #Solo en el caso de no tener experiencia con gestores de ventanas y sus previas configuraciones.
+    
+    
 
-    # Presta atencion, alos pasos a seguir, no hagas nada con root, usa tu usuario diario, o creea uno nuevo, como creas conveniente.
+    # Presta atencion, a los pasos a seguir, no hagas nada con root, usa tu usuario diario, o creea uno nuevo, como creas conveniente.
     # Solo en el caso de que haga falta o se especifica tal caso se usa sudo.
     # Los comandos estan preparados para copy/paste si lo prefieres, en algunos casos tendras que reemplazar con tu usuario, o cambiar directorios.
-    # La mayoria de las clones y instalaciones se hacen en /Downloads /Descargas, hay exceptions en /Home , presta atencion.
+    # La mayoria de las clones y instalaciones se hacen en /Downloads /Descargas, hay exceptiones en /Home , presta atencion.
    
-   #Instalacion hecha sobre : Parrot OS 4.11.3 2022 (probada tambien en Kali -sin problemas previos) 
+   #Instalacion hecha sobre : Parrot OS 4.11.3 2022  
 
 
 # Librerias Necesarias 
@@ -61,6 +62,7 @@ sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev li
 ```bash
 sudo apt update
 ```
+
 # Instalamos bspwm y sxhkd 
 
 ```bash
@@ -82,6 +84,7 @@ $ git clone https://github.com/baskerville/sxhkd.git
 # make
 # sudo make install
 ```
+      
       # Creeamos directorios y copiamos los config en los directorios corespondientes, copy/paste.
       # Si no te funciona desde home dirigete y entra dentro de las carpetas correspondientes y haz cp desde ahy, apuntando hacia esos directorios.
 
@@ -123,7 +126,7 @@ cp examples/sxhkdrc ~/.config/sxhkd/
    # cd Descargas
    # sudo mv Hack.zip /usr/share/local/fonts   (si falla de dir/ en mi caso fue : usr/share/fonts)
    # sudo unzip
-   # ahora abre una terminal WIN+ENTER (segun los shortcuts que has elegido de preferencia) mira arriba de las terminales y dirigete a Preferencias de perfil , editar perfil , dirigete a fonts.
+   # ahora abre una terminal WIN+ENTER (segun los shortcuts que has elegido de preferencia) mira arriba de las terminales y dirigete a preferencias de perfil , editar perfil ,      dirigete a fonts.
    # ahy busca y elige tu estilo de font que descargaste, y listo.
  ```
 
