@@ -161,25 +161,37 @@ sudo apt update
 ```
 
 # En este punto se puede reinciar (sudo kill -9 -1) , iniciar en bspwm.
+
 •  Y puedes ver la polybar arriba (es la polybar normal, enseguida lo tuneamos con temas interesantes, paciencia es la clave.
-•  Se puede dar el caso ,que no aparezca o NO ESTE, que en diferentes ocasiones me paso a mi , para esto ejecuta un sudo rm -r polybar y clonea de nuevo siguiendo los pasos descritos.
+
+•  Se puede dar el caso ,que no aparezca o NO ESTE, que en diferentes ocasiones me paso a mi , para esto ejecuta un sudo rm -r polybar y clonea de nuevo siguiendo los pasos        descritos.
+
 •  Se puede dar el caso de que te falta aguna libreria.
 
 # Instalamos TEMAS para Polybar
 
 • Descarga materialicons en /HOME , el repositorio : https://github.com/google/material-design-icons.git 
+
 • No olvide al final del clone hacer fc-cache -fv
 
 • Temas que uso : https://github.com/adi1090x/polybar-themes (tiene una gran variedad de temas)
+
 • Sigue los pasos indicados en el repositorio, las fuentes las tienes instaladas desde el paso de ariba descrito, como material icons.
  
+
 # No olvides esta linea se codigo: bash ~/.config/polybar/launch.sh --cuts  
+
 •  en ~/.config/bspwm/bspwmrc 
+
 •  --cuts es el nombre del tema, tu elige el tuyo.
 
 • En el repo arriba se encuentra un archivo modules.ini , editado y configurado al maximo, con icons etc, modules , scripts. 
+
 •  Lo puedes modificar al maximo (ten mucho cuidado lo que tocas , te puedes quedar sin barra, te recomiendo investigar un poco.
+
 •  De igual manera con copy/paste al mio tienes la polybar tuneada de manera mia.
+
+
 
 # Fondo de Pantalla con feh
 
@@ -190,13 +202,19 @@ sudo apt update
 ```
 
 • ahora agregamos la siguente linea al final : feh --bg-fill /home/tmcyber/images/hacking-hackers.jpg
+
 • Ten en cuenta tu nombre de usuario y los directorios, modifica y pon los tuyos.
+
 • Abres google y descargas un fondo de pantalla , o si no lo pasas mediante samba o servidor a tu maquina, etc.
+
+
+
 
 
 # Transparencias con picom (el viejo compton) 
 
 • ejecuta el cloneo en la carpeta /Descargas) suele saltar errores a la hora de clonar en /Home
+
 # Instala estas librerias, si las tienes pues perfecto.
 
 ```bash
@@ -216,15 +234,23 @@ $ git clone https://github.com/ibhagwan/picom.git
 ```
 
 • cp picom.conf al directorio ~/.config/picom 
+
 • mira los permisos que tiene siempre si no : chmod +x y listo.
-• En algunos casos usuarios se han trepado con que el archivo picom.conf no esta , si este es tu caso creeamos uno en el dir : cd~/.config/picom con touch picom.conf  (dale permisos chmod +x)
+
+• En algunos casos usuarios se han trepado con que el archivo picom.conf no esta , si este es tu caso creeamos uno en el dir : cd~/.config/picom con touch picom.conf  (dale n     permisos chmod +x)
+
 • Mi conf de picom esta en el repo copy/paste en el tuyo , listo : # NO OLVIDES LO QUE DIJE AL PRINCIPIO , ESTA CONFIGURADA PARA TRANSPARENCIAS EN TODO SISTEMA!
+
 
 # MUY IMPORTANTE
 
 • El .conf esta editado y descomentado todo lo relacionado con blur y cambiado el 'backend = "glx"' por 'backend = "xrender"' , nada de glx.
+
 • En multitud de ocasiones "glx y Blur bloqueo el gestor y las ventanas, o se experimento una lentitud de la maquina, te lo digo por experiencia.
+
 • Si te interesa tener blurring en las ventanas, comenta las lineas de codigo en el apartado blur, e intentalo , pero no te lo recomiendo , en mi caso no me gusta el blurring.
+
+
 
 # AHORA 
 
@@ -234,7 +260,9 @@ picom &
 
 • Listo, guardas y sales . reinicio total de configuraciones  WIN+ALT+R (en mi caso)
 
+
 • OPCIONAL si queres quitar todos los bordes, y tener esquinas redondeadas aplica esto:
+
 ```bash
 echo 'picom --experimental-backends &' >> ~/.config/bspwm/bspwmrc 
 echo 'bspc config border_width 0' >> ~/.config/bspwm/bspwmrc
@@ -248,11 +276,14 @@ echo 'bspc config border_width 0' >> ~/.config/bspwm/bspwmrc
 # sudo apt install rofi
 ```
 • WIN+D (shortcut a tu gusto, deberia aparecer rofi)
+
 • rofi-theme-selector (elige tema a tu gusto)
+
 • En los repositorios de github hay temas por gustos.
 
 
 # TUNNING DE TERMINALES POWERLEVEL10K 
+
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
@@ -273,6 +304,7 @@ ln -s -f /home/tmcyber/.zshrc .zshrc
 ```
                # modifica y pon tu usuario tu usuario 
 
+
 # Aplicamos zsh como nuestra shell por defecto, es opcional.
 
 ```bash
@@ -280,11 +312,15 @@ usermod --shell /usr/bin/zsh tmcyber       (seguido de tu usuario)
 usermod --shell /usr/bin/zsh root            (para root tambien executas esto)
 ```
 
+
 # Instalamos Brave Browser
 
 • brave es muy seguro 
+
 • rastreadores y bloqueadores incorporados 
+
 • no hace falta agregar extensiones como adblocker o parecidas
+
 • en recursos de sistema tiene muy bajo consumo, menos que firefox.
 
 ```bash
@@ -298,10 +334,13 @@ usermod --shell /usr/bin/zsh root            (para root tambien executas esto)
 # Instalamos lsd
 
 • Repositorio Github : https://github.com/Peltoche/lsd
+
 • ve a releases > version , en mi caso amd64 , io tengola 0.21.0 )
 
     # Instalas con sudo dkpg -i 
     # lsd -l  y veras la diferencia
+
+
 
 # Instalamos ranger
 
