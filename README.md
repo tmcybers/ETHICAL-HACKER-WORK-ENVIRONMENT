@@ -30,19 +30,129 @@
 
 
 # Librerias Necesarias 
-    #hacer sudo apt install de todas, si algunas se encuentran instaladas , pasas a las siguentes..hasta tener todas instaladas.
+* hacer sudo apt install de todas, si algunas se encuentran instaladas , pasas a las siguente, hasta tener todas instaladas.
 
-* sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
+```bash
+sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev 
 libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+```
 
- • sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev 
+```bash
+sudo apt install cmake cmake-data pkg-config python3-sphinx libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev 
 libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-xkb-dev 
 libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
+```
 
- • sudo apt install meson libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev 
+```bash
+sudo apt install meson libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev 
 libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libpixman-1-dev libdbus-1-dev libconfig-dev 
 libgl1-mesa-dev libpcre2-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev libxcb-glx0-dev
+```
 
- • sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+```bash
+sudo apt install build-essential git vim xcb libxcb-util0-dev libxcb-ewmh-dev libxcb-randr0-dev libxcb-icccm4-dev libxcb-keysyms1-dev libxcb-xinerama0-dev libasound2-dev libxcb-xtest0-dev libxcb-shape0-dev
+ ```
+
+```bash
+sudo apt update
+```
+# Instalamos bspwm y sxhkd 
+
+```bash
+# cd Downloads
+# sudo apt install bspwm
+$ git clone https://github.com/baskerville/bspwm.git
+# cd bspwm/
+# make
+# sudo make install
+```
+
+# Proceedemos con sxhkd 
+
+```bash
+# cd Downloads
+# sudo apt install sxhkd
+$ git clone https://github.com/baskerville/sxhkd.git
+# cd sxhkd/
+# make
+# sudo make install
+```
+      # Creeamos directorios y copiamos los config en los directorios corespondientes, do copy/paste.
+      # Si no te funciona desde home dirigete y entra dentro  de las carpetas correspondientes y haz cp desde ahy, apuntando hacia esos directorios.
+
+```bash
+cd
+mkdir ~/.config/bspwm
+mkdir ~/.config/sxhkd
+cd /home/tmcyber/bspwm/         (reemplaza el usuario,al tuyo..)
+cp examples/bspwmrc ~/.config/bspwm/
+chmod +x ~/.config/bspwm/bspwmrc 
+cp examples/sxhkdrc ~/.config/sxhkd/
+```
+
+
+# nano/vim y editamos los shortcuts a nuestro gusto:
+    # En mi caso los shorts miois estan en el repo sxhkdrc.
+
+
+
+# Instalamos Polybar
+
+    # Abre tu navegador y dirigete a https://www.nerdfonts.com/ o algun otro sitio tuyo preferido.
+    # Instala algunas de las fuentes a tu gusto, te recomiendo por lo menos 2 tipos de fonts como serian: JetBrainsMono, Iosevka, UbuntuMono, Hack Nerd Fonts .etc.
+
+# Sitos:
+
+• https://github.com/be5invis/Iosevka/releases
+• https://www.nerdfonts.com/font-downloads
+• https://www.1001fonts.com/jetbrains-mono-font.html
+• https://www.1001freefonts.com/es/ubuntu-mono.font
  
- • sudo apt update
+   # Por ex Hack Nerd Fonts de nerdfonts.com : 
+```bash
+   # cd Descargas
+   # sudo mv Hack.zip /usr/share/local/fonts   (si falla de dir/ en mi caso fue : usr/share/fonts)
+   # sudo unzip
+   # ahora abre una terminal WIN+ENTER (segun los shortcuts que has elegido de preferencia) mira arriba de las terminales y dirigete a Preferencias de perfil , editar perfil , dirigete a fonts.
+   # ahy busca y elige tu estilo de font que descargaste, y listo.
+ ```
+
+# Clonamos desde github la polybar
+
+```bash
+# cd Downloads
+$ git clone --recursive https://github.com/polybar/polybar
+# cd polybar/
+# mkdir build
+# cd build/
+# cmake ..
+# make -j$(nproc)
+# sudo make install
+```
+
+# Executa echo sobre bspqm -archivo de arranque- (verifica con un cat) :
+
+```bash
+# echo '~/.config/polybar/./launch.sh' >> ~/.config/bspwm/bspwmrc
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
