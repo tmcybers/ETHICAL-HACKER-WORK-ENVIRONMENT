@@ -34,6 +34,7 @@ BSPWM + POLYBAR + BRAVE
 
 
 # Librerias Necesarias 
+
 * hacer sudo apt install de todas, si algunas se encuentran instaladas , pasas a las siguente, hasta tener todas instaladas.
 
 ```bash
@@ -81,8 +82,8 @@ $ git clone https://github.com/baskerville/sxhkd.git
 # make
 # sudo make install
 ```
-      # Creeamos directorios y copiamos los config en los directorios corespondientes, do copy/paste.
-      # Si no te funciona desde home dirigete y entra dentro  de las carpetas correspondientes y haz cp desde ahy, apuntando hacia esos directorios.
+      # Creeamos directorios y copiamos los config en los directorios corespondientes, copy/paste.
+      # Si no te funciona desde home dirigete y entra dentro de las carpetas correspondientes y haz cp desde ahy, apuntando hacia esos directorios.
 
 ```bash
 cd
@@ -96,23 +97,28 @@ cp examples/sxhkdrc ~/.config/sxhkd/
 
 
 # nano/vim y editamos los shortcuts a nuestro gusto:
-    # En mi caso los shorts miois estan en el repo sxhkdrc.
+    # En mi caso los shorts que uso estan en el repo > sxhkdrc.
 
 
 
 # Instalamos Polybar
 
-    # Abre tu navegador y dirigete a https://www.nerdfonts.com/ o algun otro sitio tuyo preferido.
-    # Instala algunas de las fuentes a tu gusto, te recomiendo por lo menos 2 tipos de fonts como serian: JetBrainsMono, Iosevka, UbuntuMono, Hack Nerd Fonts .etc.
+    # Abre tu navegador y dirigete a https://www.nerdfonts.com/ 
+    # Instala algunas de las fuentes a tu gusto, te recomiendo por lo menos 1 tipo de fonts como serian: JetBrainsMono, Iosevka, UbuntuMono, Hack Nerd Fonts etc.
+
 
 # Sitos:
 
-• https://github.com/be5invis/Iosevka/releases
-• https://www.nerdfonts.com/font-downloads
-• https://www.1001fonts.com/jetbrains-mono-font.html
-• https://www.1001freefonts.com/es/ubuntu-mono.font
+ • https://github.com/be5invis/Iosevka/releases
+
+ • https://www.nerdfonts.com/font-downloads
+
+ • https://www.1001fonts.com/jetbrains-mono-font.html
+
+ • https://www.1001freefonts.com/es/ubuntu-mono.font
  
    # Por ex Hack Nerd Fonts de nerdfonts.com : 
+
 ```bash
    # cd Descargas
    # sudo mv Hack.zip /usr/share/local/fonts   (si falla de dir/ en mi caso fue : usr/share/fonts)
